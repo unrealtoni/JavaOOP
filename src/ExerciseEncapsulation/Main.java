@@ -13,10 +13,9 @@ public class Main {
         Box box;
         try {
             box = new Box(length, width, height);
+            System.out.println(box);
         }catch (IllegalArgumentException ex){
             System.out.println(ex.getMessage());
-            return;
         }
-        System.out.println(box);
     }
 }
